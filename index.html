@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="description" content="ChampionDraft - Premier Fantasy Sports Platform">
+		<link rel="icon" type="image/png" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChampionDraft - Premier Fantasy Sports Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-landing.css">
+</head>
+<body>
+    <!-- Age Verification Popup -->
+    <div id="ageVerificationPopup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2>Age Verification Required</h2>
+            <p>You must be 18 or older to access this site.</p>
+            <button id="confirmAge">I am 18 or older</button>
+            <button id="rejectAge">I am under 18</button>
+        </div>
+    </div>
+
+    <!-- Mobile Landing Page -->
+    <div id="mobileLanding" class="mobile-only">
+        <div class="hero-section">
+            <h1>ChampionDraft</h1>
+            <p>Join millions of players and win big!</p>
+            <div class="cta-button-wrapper">
+                <a href="/" class="pulsing-button">Download Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Content -->
+    <div id="desktopContent" class="desktop-only">
+        <!-- Header -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="/">ChampionDraft</a>
+                </div>
+                <button class="mobile-menu-btn">☰</button>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/app-download">Download App</a></li>
+                    <li><a href="/rules">Game Rules</a></li>
+                    <li><a href="/learn">Learn</a></li>
+                    <li><a href="/contact">Support</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section with Video Background -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h3>Welcome to ChampionDraft</h3>
+                    <p>Experience the Ultimate Fantasy Sports Gaming</p>
+                    <a href="/app-download" class="cta-button">Get Started</a>
+                </div>
+            </section>
+
+            <!-- Featured Game Spotlight -->
+            <section class="game-spotlight">
+                <div class="container">
+                    <div class="spotlight-content">
+                        <div class="spotlight-text">
+                            <h2>IPL 2024 Fantasy League</h2>
+                            <p class="spotlight-description">Create your dream team with the biggest cricket stars and compete for massive rewards.</p>
+                            <ul class="spotlight-features">
+                                <li>Daily rewards up to 100,000 points</li>
+                                <li>Live player statistics</li>
+                                <li>Real-time score updates</li>
+                            </ul>
+                            <a href="/app-download" class="spotlight-button">Join Tournament</a>
+                        </div>
+                        <div class="spotlight-image">
+                            <img src="img/ipl-preview.jpg" alt="IPL Fantasy League">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Tournaments -->
+            <section class="tournaments">
+                <div class="container">
+                    <h2>Live Tournaments</h2>
+                    <div class="tournament-grid">
+                        <div class="tournament-card">
+                            <div class="tournament-header cricket">
+                                <div class="sport-info">
+                                    <img src="img/cricket.svg" alt="Cricket" width="24" height="24">
+                                    <span class="sport-type">Cricket</span>
+                                </div>
+                                <div class="prize-info">
+                                    <img src="img/points.svg" alt="Points" width="16" height="16">
+                                    <span class="prize">100,000 pts</span>
+                                </div>
+                            </div>
+                            <h3>IPL Mega Contest</h3>
+                            <div class="tournament-info">
+                                <div class="info-item">
+                                    <span class="info-label">Teams:</span>
+                                    <span class="info-value">10,000</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Time Left:</span>
+                                    <span class="info-value time-left">2 hours</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                                <span class="progress-text">75% Full</span>
+                            </div>
+                            <a href="/app-download" class="join-button">Join Now</a>
+                        </div>
+
+                        <div class="tournament-card">
+                            <div class="tournament-header football">
+                                <div class="sport-info">
+                                    <img src="img/football.svg" alt="Football" width="24" height="24">
+                                    <span class="sport-type">Football</span>
+                                </div>
+                                <div class="prize-info">
+                                    <img src="img/points.svg" alt="Points" width="16" height="16">
+                                    <span class="prize">50,000 pts</span>
+                                </div>
+                            </div>
+                            <h3>Premier League Masters</h3>
+                            <div class="tournament-info">
+                                <div class="info-item">
+                                    <span class="info-label">Teams:</span>
+                                    <span class="info-value">5,000</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Time Left:</span>
+                                    <span class="info-value time-left">5 hours</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%"></div>
+                                <span class="progress-text">45% Full</span>
+                            </div>
+                            <a href="/app-download" class="join-button">Join Now</a>
+                        </div>
+
+                        <div class="tournament-card">
+                            <div class="tournament-header kabaddi">
+                                <div class="sport-info">
+                                    <img src="img/kabaddi.svg" alt="Kabaddi" width="24" height="24">
+                                    <span class="sport-type">Kabaddi</span>
+                                </div>
+                                <div class="prize-info">
+                                    <img src="img/points.svg" alt="Points" width="16" height="16">
+                                    <span class="prize">25,000 pts</span>
+                                </div>
+                            </div>
+                            <h3>Pro Kabaddi Challenge</h3>
+                            <div class="tournament-info">
+                                <div class="info-item">
+                                    <span class="info-label">Teams:</span>
+                                    <span class="info-value">3,000</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Time Left:</span>
+                                    <span class="info-value time-left">1 hour</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                                <span class="progress-text">90% Full</span>
+                            </div>
+                            <a href="/app-download" class="join-button">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Players Section -->
+            <section class="featured-players">
+                <div class="container">
+                    <h2>Featured Players</h2>
+                    <div class="players-grid">
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="img/player1.jpg" alt="Player 1">
+                                <div class="player-status online"></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Alex Storm</h3>
+                                <div class="player-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">94%</span>
+                                        <span class="stat-label">Win Rate</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">158</span>
+                                        <span class="stat-label">Tournaments</span>
+                                    </div>
+                                </div>
+                                <a href="/app-download" class="follow-button">Follow Player</a>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="img/player2.jpg" alt="Player 2">
+                                <div class="player-status online"></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Sarah Knight</h3>
+                                <div class="player-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">91%</span>
+                                        <span class="stat-label">Win Rate</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">203</span>
+                                        <span class="stat-label">Tournaments</span>
+                                    </div>
+                                </div>
+                                <a href="/app-download" class="follow-button">Follow Player</a>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="img/player3.jpg" alt="Player 3">
+                                <div class="player-status"></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Mike Thunder</h3>
+                                <div class="player-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">88%</span>
+                                        <span class="stat-label">Win Rate</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">145</span>
+                                        <span class="stat-label">Tournaments</span>
+                                    </div>
+                                </div>
+                                <a href="/app-download" class="follow-button">Follow Player</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Match Stats Section -->
+            <section class="live-stats">
+                <div class="container">
+                    <h2>Live Match Stats</h2>
+                    <div class="live-stats-grid">
+                        <div class="match-card">
+                            <div class="match-header">
+                                <span class="live-indicator">LIVE</span>
+                                <span class="match-time">24:15</span>
+                            </div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/team1.jpg" alt="Team 1">
+                                    <span class="team-name">Thunder Kings</span>
+                                    <span class="score">87</span>
+                                </div>
+                                <span class="vs">VS</span>
+                                <div class="team">
+                                    <img src="img/team2.jpg" alt="Team 2">
+                                    <span class="team-name">Storm Raiders</span>
+                                    <span class="score">82</span>
+                                </div>
+                            </div>
+                            <div class="match-stats">
+                                <div class="stat-bar">
+                                    <div class="stat-label">Possession</div>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 55%"></div>
+                                        <div class="progress-right" style="width: 45%"></div>
+                                    </div>
+                                    <div class="stat-values">
+                                        <span>55%</span>
+                                        <span>45%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/app-download" class="watch-live">Watch Live Stream</a>
+                        </div>
+
+                        <div class="match-card">
+                            <div class="match-header">
+                                <span class="live-indicator">LIVE</span>
+                                <span class="match-time">35:42</span>
+                            </div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/team3.jpg" alt="Team 3">
+                                    <span class="team-name">Royal Eagles</span>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">VS</span>
+                                <div class="team">
+                                    <img src="img/team4.jpg" alt="Team 4">
+                                    <span class="team-name">Dragon Warriors</span>
+                                    <span class="score">1</span>
+                                </div>
+                            </div>
+                            <div class="match-stats">
+                                <div class="stat-bar">
+                                    <div class="stat-label">Ball Control</div>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 60%"></div>
+                                        <div class="progress-right" style="width: 40%"></div>
+                                    </div>
+                                    <div class="stat-values">
+                                        <span>60%</span>
+                                        <span>40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/app-download" class="watch-live">Watch Live Stream</a>
+                        </div>
+
+                        <div class="match-card">
+                            <div class="match-header">
+                                <span class="live-indicator">LIVE</span>
+                                <span class="match-time">18:22</span>
+                            </div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/team5.jpg" alt="Team 5">
+                                    <span class="team-name">Phoenix Stars</span>
+                                    <span class="score">156</span>
+                                </div>
+                                <span class="vs">VS</span>
+                                <div class="team">
+                                    <img src="img/team6.jpg" alt="Team 6">
+                                    <span class="team-name">Lightning Bulls</span>
+                                    <span class="score">148</span>
+                                </div>
+                            </div>
+                            <div class="match-stats">
+                                <div class="stat-bar">
+                                    <div class="stat-label">Field Goals</div>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 52%"></div>
+                                        <div class="progress-right" style="width: 48%"></div>
+                                    </div>
+                                    <div class="stat-values">
+                                        <span>52%</span>
+                                        <span>48%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/app-download" class="watch-live">Watch Live Stream</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section (Replacing Achievements) -->
+            <section class="features">
+                <div class="container">
+                    <h2>Our Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="img/instant-withdrawals.svg" alt="Instant Withdrawals">
+                            </div>
+                            <h3>Instant Withdrawals</h3>
+                            <p>Get your winnings instantly with our secure payment system</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="img/live-tracking.svg" alt="Live Tracking">
+                            </div>
+                            <h3>Live Score Tracking</h3>
+                            <p>Track your team's performance in real-time with live updates</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="img/secure.svg" alt="Secure Platform">
+                            </div>
+                            <h3>100% Secure</h3>
+                            <p>Bank-grade security for all your transactions and data</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="img/support.svg" alt="24/7 Support">
+                            </div>
+                            <h3>24/7 Support</h3>
+                            <p>Round-the-clock customer support for all your needs</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Stats Section -->
+            <section class="interactive-stats">
+							<div class="container">
+                <div class="stats-tabs">
+                    <button class="tab-button active" data-tab="daily">Daily Stats</button>
+                    <button class="tab-button" data-tab="weekly">Weekly Stats</button>
+                    <button class="tab-button" data-tab="monthly">Monthly Stats</button>
+                </div>
+                <div class="stats-content active" id="daily">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="img/user.svg" alt="Users" width="24" height="24">
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Active Players</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="img/points.svg" alt="Points" width="24" height="24">
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">500K+</span>
+                            <span class="stat-label">Points Awarded</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="img/trophy.svg" alt="Trophy" width="24" height="24">
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Tournaments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Content Sections -->
+                <div class="stats-content" id="weekly" style="display: none;">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="img/user.svg" alt="Users" width="24" height="24">
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">250K+</span>
+                            <span class="stat-label">Weekly Players</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="img/points.svg" alt="Points" width="24" height="24">
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">2.5M+</span>
+                            <span class="stat-label">Weekly Points</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="img/trophy.svg" alt="Trophy" width="24" height="24">
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Weekly Tournaments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-content" id="monthly" style="display: none;">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="img/user.svg" alt="Users" width="24" height="24">
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label">Monthly Players</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="img/points.svg" alt="Points" width="24" height="24">
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">10M+</span>
+                            <span class="stat-label">Monthly Points</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="img/trophy.svg" alt="Trophy" width="24" height="24">
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">2000+</span>
+                            <span class="stat-label">Monthly Tournaments</span>
+                        </div>
+                    </div>
+                </div>
+							</div>
+            </section>
+
+            <!-- Features Split Section -->
+            <section class="features-split">
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="img/secure-payments.jpg" alt="Secure Points">
+                    </div>
+                    <div class="feature-text">
+                        <h3>100% Secure Platform</h3>
+                        <p>Bank-grade security for all your activities with instant point transfers and multiple redemption options.</p>
+                    </div>
+                </div>
+                <div class="feature-item reverse">
+                    <div class="feature-image">
+                        <img src="img/live-tracking.jpg" alt="Live Tracking">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Real-time Score Tracking</h3>
+                        <p>Watch your fantasy team perform in real-time with our advanced live scoring system.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Section -->
+            <section class="community">
+                <div class="community-overlay"></div>
+                <div class="community-content">
+                    <h3>Join Our Community</h3>
+                    <p>Connect with millions of fantasy sports enthusiasts</p>
+                    <div class="community-stats">
+                        <div class="community-stat">
+                            <span class="number">5M+</span>
+                            <span class="label">Players</span>
+                        </div>
+                        <div class="community-stat">
+                            <span class="number">100K+</span>
+                            <span class="label">Daily Active Users</span>
+                        </div>
+                        <div class="community-stat">
+                            <span class="number">4.8★</span>
+                            <span class="label">User Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- App Download Section -->
+            <section class="app-download">
+                <div class="app-content">
+                    <div class="app-text">
+                        <h2>Take ChampionDraft Everywhere</h2>
+                        <p>Download our app and get 1000 bonus points on signup!</p>
+                        <div class="app-features">
+                            <div class="app-feature">
+                                <img src="img/notification.svg" alt="Notifications" width="24" height="24">
+                                <span>Instant Notifications</span>
+                            </div>
+                            <div class="app-feature">
+                                <img src="img/quick-join.svg" alt="Quick Join" width="24" height="24">
+                                <span>Quick Join Contests</span>
+                            </div>
+                            <div class="app-feature">
+                                <img src="img/biometric.svg" alt="Biometric" width="24" height="24">
+                                <span>Biometric Login</span>
+                            </div>
+                        </div>
+                        <div class="download-buttons">
+                            <a href="/app-download" class="download-app-button">Download App</a>
+                        </div>
+                    </div>
+                    <div class="app-preview">
+                        <img src="img/app-screens.jpg" alt="App Preview" class="floating">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Disclaimer Section -->
+        <section class="disclaimer-section">
+            <div class="disclaimer-content">
+                <h3>Legal Disclaimer</h3>
+                <p>Participation in fantasy sports is governed by the laws applicable in India. Fantasy sports are categorized as a 'game of skill' under Indian law and are legal in most states. However, residents of Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, and Telangana are not eligible to participate as per state regulations. Users must be at least 18 years of age to register and play on this platform. Please play responsibly and ensure compliance with applicable laws before participating.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+				<footer>
+					<div class="footer-content">
+							<div class="footer-section">
+									<h3>Quick Links</h3>
+									<ul>
+											<li><a href="/">Home</a></li>
+											<li><a href="/app-download">Download App</a></li>
+											<li><a href="/rules">Game Rules</a></li>
+											<li><a href="/learn">Learn</a></li>
+									</ul>
+							</div>
+							<div class="footer-section">
+									<h3>Support</h3>
+									<ul>
+											<li><a href="/contact">Contact Us</a></li>
+											<li><a href="/privacy-policy">Privacy Policy</a></li>
+											<li><a href="/terms-conditions">Terms & Conditions</a></li>
+									</ul>
+							</div>
+							<div class="footer-section">
+									<h3>Legal</h3>
+									<div class="state-restrictions">
+											<h4>State Restrictions</h4>
+											<p>Our services are not available in the following states due to local regulations:</p>
+											<div class="restricted-states">
+													<span class="restricted-state">Andhra Pradesh</span>
+													<span class="restricted-state">Assam</span>
+													<span class="restricted-state">Nagaland</span>
+													<span class="restricted-state">Odisha</span>
+													<span class="restricted-state">Sikkim</span>
+													<span class="restricted-state">Telangana</span>
+											</div>
+									</div>
+							</div>
+					</div>
+			</footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="description" content="Contact Us - Fantasy Sports India">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Fantasy Sports India</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+				<div class="logo">
+						<a href="/">ChampionDraft</a>
+				</div>
+				<button class="mobile-menu-btn">☰</button>
+				<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/app-download">Download App</a></li>
+						<li><a href="/rules">Game Rules</a></li>
+						<li><a href="/learn">Learn</a></li>
+						<li><a href="/contact">Support</a></li>
+				</ul>
+		</nav>
+</header>
+
+    <main>
+        <section class="support-section">
+            <div class="container">
+                
+                <div class="support-content">
+                    <div class="contact-form">
+                        <h1>Contact Us</h1>
+                        <form action="/thanks_form.php" method="POST" id="supportForm">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject:</label>
+                                <div class="select-wrapper">
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Select a topic</option>
+                                        <option value="account" data-icon="/img/account-icon.svg">Account Issues</option>
+                                        <option value="payment" data-icon="/img/payment-icon.svg">Payment Issues</option>
+                                        <option value="technical" data-icon="/img/technical-icon.svg">Technical Support</option>
+                                        <option value="other" data-icon="/img/other-icon.svg">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                <label for="agreement">I agree to the Terms & Conditions and confirm that I am at least 18 years old</label>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <h3>How do I create an account?</h3>
+                                <p>Download our app and click on the "Sign Up" button. Follow the simple registration process to create your account.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h3>How do I withdraw my winnings?</h3>
+                                <p>Go to your wallet section, click on "Withdraw", enter the amount, and select your preferred payment method.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h3>What payment methods are accepted?</h3>
+                                <p>We accept various payment methods including UPI, Net Banking, Credit/Debit cards, and popular e-wallets.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h3>Is my personal information secure?</h3>
+                                <p>Yes, we use industry-standard encryption to protect your personal and financial information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+		<footer>
+			<div class="footer-content">
+					<div class="footer-section">
+							<h3>Quick Links</h3>
+							<ul>
+									<li><a href="/">Home</a></li>
+									<li><a href="/app-download">Download App</a></li>
+									<li><a href="/rules">Game Rules</a></li>
+									<li><a href="/learn">Learn</a></li>
+							</ul>
+					</div>
+					<div class="footer-section">
+							<h3>Support</h3>
+							<ul>
+									<li><a href="/contact">Contact Us</a></li>
+									<li><a href="/privacy-policy">Privacy Policy</a></li>
+									<li><a href="/terms-conditions">Terms & Conditions</a></li>
+							</ul>
+					</div>
+					<div class="footer-section">
+							<h3>Legal</h3>
+							<div class="state-restrictions">
+									<h4>State Restrictions</h4>
+									<p>Our services are not available in the following states due to local regulations:</p>
+									<div class="restricted-states">
+											<span class="restricted-state">Andhra Pradesh</span>
+											<span class="restricted-state">Assam</span>
+											<span class="restricted-state">Nagaland</span>
+											<span class="restricted-state">Odisha</span>
+											<span class="restricted-state">Sikkim</span>
+											<span class="restricted-state">Telangana</span>
+									</div>
+							</div>
+					</div>
+			</div>
+	</footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 
